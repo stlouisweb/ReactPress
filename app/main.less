@@ -1,0 +1,106 @@
+html {
+  min-height: 100%;
+}
+body {
+  background: aqua;
+  background-image: url('./assets/golfcourse.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 480px;
+  min-height: 100%;
+}
+.page {
+  min-width: 640px;
+  min-height: 100%;
+}
+.jm_header {
+  min-height: 50px;
+}
+.jm_main-nav.navbar.navbar-inverse {
+   background-color: #333;
+   background-color: rgba(0,0,0,0.80);
+}
+.jm_logo {
+  background-image: url('./assets/logo1.png');
+  display: inline-block;
+  height: 40px;
+  padding: 0px;
+  background-size: cover;
+  width: 190px;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  margin: 5px 0;
+  left: 15px;
+  position: relative;
+}
+span#tagline {
+  font-size: 14px;
+  left: 190px;
+  position: relative;
+  line-height: 42px;
+  color: #5F523C;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.jm_main-content {
+  .jumbotron {
+  background: rgba(252,255,252,0.76);
+  margin-top: 100px;
+  padding-top: 30px;
+  border-radius: 0;
+    h1 {
+      font-weight: 100;
+      color: #DC9F29;
+      #header-copy-2 {
+        margin-left: 17px;
+      }
+    }
+  }
+  .btn-trans {
+    width: 210px;
+    margin: 0 60px 20px;
+  }
+}
+.btn-lg {
+  font-size: 22px;
+}
+.btn-trans {
+  color: #fff;
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: #fff;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 600ms;
+  border: 2px solid #fff;
+}
+.btn-trans:hover, btn-trans:active {
+  background: #eee;
+  border: 2px solid #315600;
+  color: #315600;
+}
+.home-btn-nav {
+  width: 990px;
+}
+@media screen and (max-width: 1005px) {
+  .jm_main-content {
+    .home-btn-nav {
+      width: 95%;
+      margin: 10px 2.5%;
+    }
+    .btn-trans {
+      width: 80%;
+      margin: 5px 10%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .jumbotron h1, .jumbotron .h1 {
+    font-size: 59px;
+  }
+}
