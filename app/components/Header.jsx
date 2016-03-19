@@ -1,6 +1,6 @@
 import React from 'react';
 
 export default () =>
-  <div className="container-fluid">
-    <h1>Saint Louis Web Services</h1>
-  </div>;
+<div className="header container-fluid">
+  <p>Header</p>
+</div>;

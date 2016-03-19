@@ -1,7 +1,7 @@
 import React from 'react';
-import Note from './Note.jsx';
 import Header from './Header.jsx';
 import Home from './Home.jsx';
+import Footer from './Footer.jsx';
 
 
 export default class App extends React.Component {
@@ -10,6 +10,7 @@ export default class App extends React.Component {
       <div id="page">
         <Header />
         <Home />
+        <Footer />
       </div>
     );
   }
