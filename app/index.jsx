@@ -8,6 +8,7 @@ import App from './components/App'
 import Login from './components/Login'
 import { Router, Route, hashHistory } from 'react-router'
 
+
 render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
