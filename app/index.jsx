@@ -6,6 +6,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import App from './components/App'
 import Login from './components/Login'
+import Validate from './components/Validate'
 import { Router, Route, hashHistory } from 'react-router'
 
 
@@ -14,6 +15,7 @@ render((
     <Route path="/" component={App}>
       {/* make them children of `App` */}
       <Route path="/login" component={Login}/>
+      <Route path="/validate" component={Validate}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

@@ -8,6 +8,7 @@ import when from 'when';
 module.exports = {
   login(username, password, cb) {
     cb = arguments[arguments.length - 1]
+    console.log(cb);
     if (localStorage.token) {
       if (cb) cb(true)
       this.onChange(true)
@@ -42,7 +43,7 @@ module.exports = {
   onChange() {}
 }
 
-function pretendRequest(username, password, cb) {
+function Login(username, password, cb) {
   setTimeout(() => {
     if (username === 'joe@example.com' && password === 'passwordword1') {
       cb({
@@ -55,7 +56,14 @@ function pretendRequest(username, password, cb) {
   }, 0)
 }
 
-function wpAuth(username, password) {
+function login(res, cb) {
+  cb({
+    authenticated: true,
+    token: res.token
+})
+}
+
+function wpAuth(username, password, cb) {
   console.log(username);
   console.log(password);
   return handleAuth(when(request({
@@ -66,14 +74,23 @@ function wpAuth(username, password) {
       data: {
         username, password
       }
-    })));
+    })), cb);
 }
-function handleAuth(loginPromise) {
+function handleAuth(loginPromise, cb) {
    return loginPromise
      .then(function(response) {
-       var jwt = response;
-       console.log(response);
-      // LoginActions.loginUser(jwt);
-       return true;
+       var res = JSON.parse(response.response);
+       console.log(res.token);
+       if (response.status == 200) {
+         cb({
+            authenticated: true,
+            token: res.token
+          })
+          return true;
+       } else {
+         return 'error';
+       }
+
+
      });
  }
