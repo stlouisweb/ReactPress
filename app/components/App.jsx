@@ -9,7 +9,7 @@ export default class App extends React.Component {
     return (
       <div id="page">
         <Header />
-        <Home />
+        {this.props.children || <Home/>}
         <Footer />
       </div>
     );
