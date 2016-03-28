@@ -7,11 +7,10 @@ export default React.createClass({
     var loggedIn = auth.loggedIn();
     var loginButton;
     if (loggedIn) {
-      loginButton = <li><a href="#" onClick={logout}>logout</a></Link></li>;
+      loginButton = <li><a href="#">logout</a></li>;
     } else {
       loginButton = <li><Link to="/login">login</Link></li>;
     }
-    console.log(loggedIn);
     return (
       <div classNameName="header container-fluid">
         <nav className="navbar navbar-inverse navbar-fixed-top">

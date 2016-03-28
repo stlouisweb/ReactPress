@@ -1,7 +1,5 @@
 import React from 'react';
-import PostService from '../services/PostService';
 import restful, { fetchBackend } from 'restful.js';
-import Post from './Post.jsx';
 
 export default React.createClass({
    loadCategoriesFromServer: function() {

@@ -34,6 +34,7 @@ export default React.createClass({
   render() {
     return(
       <div className="login container-fluid">
+        <h1>Login</h1>
         <form onSubmit={this.handleSubmit}>
                <label><input ref="email" placeholder="email" defaultValue="joe@example.com" /></label>
                <label><input ref="pass" placeholder="password" /></label> (hint: password1)<br />

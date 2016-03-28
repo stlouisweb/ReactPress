@@ -1,8 +1,3 @@
-// Need to set up auth to make a POST request to this endpoint:
-// http://draughtbattle.app/wp-json/jwt-auth/v1/token
-// Form-data
-// username
-// passwordword
 import request from 'reqwest';
 import when from 'when';
 module.exports = {
