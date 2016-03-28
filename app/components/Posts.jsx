@@ -32,28 +32,6 @@ export default React.createClass({
            var content = data.content.rendered;
            return <div key={data.id}><h2>{data.title.rendered}</h2><div dangerouslySetInnerHTML={{__html: content}} /></div>;
        });
-      //  var self = this;
-      //  var postEntities = this.state.posts;
-      //  console.log(postEntities);
-      //  var posts = [];
-      //  postEntities.forEach((postEntity) => {
-      //    const post = postEntity.data();
-      //    console.log(post);
-      //    posts.push(post);
-      //  });
-      //  console.log(posts);
-      //  posts.map(function(post){
-      //    console.log(post)
-      //    return <li key={post.id}>{post.title.rendered}</li>
-      //   return <Post className="post" id={post.id} key={post.id} />
-      // });
-      //  var posts  = this.state.posts.map(function(post) {
-      //      console.log(post.one());
-      //      var data = post.data();
-       //
-      //      return <li key={data.id}>{data.title}</li>;
-      //  });
-
        return (
            <div>
                {posts}
@@ -61,24 +39,3 @@ export default React.createClass({
        );
    }
 });
-
-// export default React.createClass({
-//   getInitialState() {
-//     return {
-//       posts: null
-//     }
-//   },
-//   componentDidMount: function() {
-//     var posts = PostService.Posts.then
-//
-//   },
-//
-//   render() {
-//     return (
-//       <div className="posts">
-//         <h1>Posts</h1>
-//
-//       </div>
-//     )
-//   }
-// })
