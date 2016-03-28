@@ -7,6 +7,7 @@ import { render } from 'react-dom'
 import App from './components/App'
 import Login from './components/Login'
 import Validate from './components/Validate'
+import Posts from './components/Posts'
 import { Router, Route, hashHistory } from 'react-router'
 
 
@@ -16,6 +17,7 @@ render((
       {/* make them children of `App` */}
       <Route path="/login" component={Login}/>
       <Route path="/validate" component={Validate}/>
+      <Route path="/posts" component={Posts}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

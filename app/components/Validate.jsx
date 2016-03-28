@@ -29,13 +29,6 @@ export default React.createClass({
       }.bind(this));
   },
 
-  // validate() {
-  // const api = restful('http://draughtbattle.app/wp-json/jwt-auth/v1/token/validate', fetchBackend(fetch));
-  // api.header('Authorization', 'Bearer ' + localStorage.token);
-  // const validate = api.custom('http://draughtbattle.app/wp-json/jwt-auth/v1/token/validate', false);
-  // console.log(validate);
-
-
   render() {
     return (
       <div className="validate">
